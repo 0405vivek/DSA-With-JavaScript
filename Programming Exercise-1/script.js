@@ -19,6 +19,11 @@ console.log("Before sorting:", arr);
 descending(arr);
 console.log("After sorting:",arr);
 
+
+// output:
+// Before sorting: [ 5, 3, 8, 4, 2, 9, 11, 1, 6, 20 ]
+// After sorting: [ 20, 11, 9, 8, 6, 5, 4, 3, 2, 1 ]
+
 console.log("******************************************************")
 
 console.log(" 2. WAP for array data sorting ascending order using Merge sort..");
@@ -50,6 +55,10 @@ function merge(left, right) {
 
 // console.log("Before sorting:", arr);
 console.log("After sorting:", mergeSort(arr));
+
+// output:
+// Before sorting: [ 5, 3, 8, 4, 2, 9, 11, 1, 6, 20 ]
+// After sorting: [ 1, 2, 3, 4, 5, 6, 8, 9, 11, 20 ]
 
 console.log("******************************************************")
 
@@ -87,6 +96,18 @@ function squareArr(arr2D) {
     }
 }
 squareArr(arr2D);
+
+// output:
+// 1 2 3
+// 4 5 6
+// 7 8 9
+// Square of array:
+// 1 4 9
+// 16 25 36
+// 49 64 81
+
+
+
 console.log("******************************************************")
 
 console.log(" 4. WAP for array operations (like push and pop, slice) without its method")
@@ -119,3 +140,12 @@ function SLICE(arr,start=0,end=arr.length){
     console.log("SLICE",SLICE(arr));
     console.log("SLICE",SLICE(arr,0,3));
     console.log("SLICE",SLICE(arr,1));
+
+// output:
+// 4. WAP for array operations (like push and pop, slice) without its method
+// [ 1, 2, 3, 4, 5 ]
+// POP [ 1, 2, 3, 4 ]
+// PUSH [ 1, 2, 3, 4, 10 ]
+// SLICE [ 1, 2, 3, 4, 10 ]
+// SLICE [ 1, 2, 3 ]
+// SLICE [ 2, 3, 4, 10 ]
