@@ -51,25 +51,24 @@ class linkList{
     
     // WAP for Given Link List is Palindrome or not
 
-    palindrome(){
+    paliindrom(){
         console.log("Q.2 WAP for Given Link List is Palindrome or not")
-        let crr = this.head;
+        let temp = this.head;
         let arr = [];
-        while(crr){
-            
-            arr.push(crr.data);
-            crr = crr.next;
-
+        while(temp){
+            arr.push(temp.data);
+            temp = temp.next;
         }
-        
-        let rev = arr.reverse();
-        if(arr == rev){
-            console.log("Palindrome : true ")
-        }else{
-            console.log("Not Palindrome : false")
-
+        let start = 0;
+        let end = arr.length-1;
+        while(start<end){
+            if(arr[start] != arr[end]){
+                return false;
+            }
+            start++;
+            end--;
         }
-
+        return true;
     }
 
     // output:Palindrome : true
@@ -176,7 +175,8 @@ list.display()
 
 console.log("********************************************************");
 
-list.palindrome() 
+console.log(list.paliindrom());
+ 
 // output: false
 
 console.log("********************************************************");
