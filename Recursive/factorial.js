@@ -34,7 +34,7 @@ function fibonacci(n){
     return Series;
 
 }
-console.log(fibonacci(5))
+console.log(fibonacci(10))
 console.log("Binary Search..................")
 
 function binarySearch(arr , target , left = 0 ,right =arr.length-1){

@@ -7,13 +7,13 @@ function BinerySearch(array,ele){
     let left = 0
     let right = array.length - 1;
 
-    let mid = Math.floor((left + right)/2)
-
+    
     while(left <= right ){
+        let mid = Math.floor((left + right)/2)
 
         if (array[mid] == ele){
             return mid;
-        }else if(array[mid] < ele){
+        }else if(array[mid] <= ele){
             right = mid + 1
         }else if(array[mid] >ele ){
             left = mid - 1
@@ -23,5 +23,5 @@ function BinerySearch(array,ele){
 
 }
 
-console.log(BinerySearch(array , (60)));
+console.log(BinerySearch(array , 60));
 
