@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Set & Map => unique Value Collection
+
+        // let data = new Set(["Hello", "World", "Hello", "World"]);
+
+        // data.add("Red & White")
+        // data.add("Red & White")
+        // console.log(data);
+
+        // data.delete("Hello")
+        // data.clear()
+        // data.clear()
+        // console.log(data);
+        // console.log(data.has("Red"));
+        // console.log(data.size);
+
+        // data.forEach((ele) => console.log(ele))
+        // console.log(data.entries())
+        
+        
+        let data = new Map([
+            ["string", "Hello"],
+            [true, "Wolrd"],
+            [true, 1020],
+        ]);
+        console.log(data);
+        
+        // data.delete(true)
+        // console.log(data.has('string'));
+        // console.log(data.entries());
+        // console.log(data.get(true));
+        // console.log(data.keys());
+        // console.log(data.values());
+        data.set(101, true)
+        // console.log(data);
+        data.forEach((ele, key) => console.log(`${key} => ${ele}`))
+        </script>
+</body>
+</html>
