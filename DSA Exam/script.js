@@ -4,6 +4,9 @@ console.log("Q.1 WAP to implement insert, View and delete operations in Array us
 
     let arr = [1, 2, 3 ]
 
+
+
+    
     console.log("Push Method")
      function add (arr,n) {
        arr[arr.length] = n;
